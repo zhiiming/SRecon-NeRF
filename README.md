@@ -61,13 +61,6 @@ ns-viewer --load-config outputs/my_dataset/my-semantic/${your_logdir}/config.yml
 The `${your_logdir}` can be founded on the terminal output.
 
 # 4. Export point cloud
-
-export RBG mesh
-```sh
-ns-export pointcloud --load-config outputs/my_dataset/my-semantic/2023-10-15_114001/config.yml --output-dir exports/my-dataset-points-iter-20000/ --num-points 10000000 --remove-outliers True --normal-method open3d
-```
-
-modify exporter in nerfstudio and backup
 ```sh
 # backup, export_path is the installation path of the nerfstudio, here is the example of my path.
 export_path='/home/ilab/anaconda3/envs/nerfstudio/lib/python3.8/site-packages/nerfstudio/exporter'
